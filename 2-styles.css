@@ -17,6 +17,7 @@
     visibility: hidden;
     font-size: 32px;
     line-height: 100px;
+    color: white;
 }
 
 .toggle-label::after{
@@ -24,7 +25,7 @@
     width: 80px;
     height: 80px;
     border-radius: 100%;
-    background-color: navajowhite;
+    background-color: rgb(239, 156, 32);
     position: absolute;
     top: 10px;
     left: 10px;
@@ -46,4 +47,9 @@ input:checked + label .toggle-inner {
 
 input:not(:checked)+ label .toggle-switch {
     visibility: visible;
+    color: black;
+}
+
+input:checked + label{
+    background-color: rgb(209, 49, 49);
 }
